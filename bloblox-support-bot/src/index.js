@@ -1350,7 +1350,7 @@ client.on('interactionCreate', async interaction => {
                  .setDescription('Mensajes automáticos personalizados para nuevos miembros:\n\n`/set-welcome-channel` - Configura el canal de bienvenidas.\n`/set-bye-channel` - Configura el canal de despedidas.');
         } else if (selected === 'utils') {
             embed.setTitle('🎁 Sorteos & Utilidades')
-                 .setDescription('Herramientas de utilidad y entretenimiento:\n\n`/sortear` - Crea un nuevo sorteo.\n`/re-sortear` - Elige un nuevo ganador.\n`/serverstats` - Estadísticas en vivo del servidor en canales de voz.\n`/add-role` - Crea autoroles por reacciones.\n`/set-bump-channel en mantenimiento` - Recordatorios automáticos de Disboard.\n`/set-log-channel` - Canal de registros de moderación.\n`/say` - Envía un anuncio como bot.');
+                 .setDescription('Herramientas de utilidad y entretenimiento:\n\n`/sortear` - Crea un nuevo sorteo.\n`/re-sortear` - Elige un nuevo ganador.\n`/serverstats` - Estadísticas en vivo del servidor en canales de voz.\n`/add-role` - Crea autoroles por reacciones.\n`/set-bump-channel - en mantenimiento` - Recordatorios automáticos de Disboard.\n`/set-log-channel` - Canal de registros de moderación.\n`/say` - Envía un anuncio como bot.');
         }
 
         const selectMenu = new StringSelectMenuBuilder()
