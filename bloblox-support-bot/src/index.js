@@ -1427,3 +1427,16 @@ client.on('interactionCreate', async interaction => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+
+// --- SISTEMA ANTI-CRASH (Evita que el bot se apague por errores sueltos) ---
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('⚠️ [Anti-Crash] Promesa rechazada no manejada:', reason);
+});
+
+process.on('uncaughtException', (error) => {
+    console.error('⚠️ [Anti-Crash] Excepción no capturada:', error);
+});
+
+process.on('uncaughtExceptionMonitor', (error, origin) => {
+    console.error('⚠️ [Anti-Crash] Monitor de excepción:', error, origin);
+});
