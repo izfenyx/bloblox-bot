@@ -1338,19 +1338,19 @@ client.on('interactionCreate', async interaction => {
                  .setDescription('» **Menú de ayuda**\nTengo **6 categorías** de comandos para explorar.\n\n» **Categorías**\nUsa el menú desplegable de abajo para navegar entre las diferentes categorías de comandos y ver su información detallada.');
         } else if (selected === 'moderation') {
             embed.setTitle('🛡️ Moderación')
-                 .setDescription('Herramientas de control y seguridad para el servidor:\n\n`@/ban` - Banea a un usuario.\n`@/desban` - Desbanea por ID.\n`@/kick` - Expulsa a un usuario.\n`@/mute` - Silencia temporalmente (Timeout).\n`@/unmute` - Quita el silencio.\n`@/warn` - Registra una advertencia.\n`@/warns` - Muestra advertencias.\n`@/delwarn` - Borra una infracción.\n`@/note` - Añade una nota interna.\n`@/notes` - Muestra notas internas.\n`@/purge` - Borra mensajes masivamente.\n`@/purgeblox` - Borra mensajes del bot.');
+                 .setDescription('Herramientas de control y seguridad para el servidor:\n\n`/ban` - Banea a un usuario.\n`/desban` - Desbanea por ID.\n`/kick` - Expulsa a un usuario.\n`/mute` - Silencia temporalmente (Timeout).\n`/unmute` - Quita el silencio.\n`/warn` - Registra una advertencia.\n`/warns` - Muestra advertencias.\n`/delwarn` - Borra una infracción.\n`/note` - Añade una nota interna.\n`/notes` - Muestra notas internas.\n`/purge` - Borra mensajes masivamente.\n`/purgeblox` - Borra mensajes del bot.');
         } else if (selected === 'tickets') {
             embed.setTitle('🎟️ Soporte & Tickets')
-                 .setDescription('Sistema automatizado de asistencia privada:\n\n`@/setup-support` - Envía el panel permanente de creación de tickets en el canal actual.');
+                 .setDescription('Sistema automatizado de asistencia privada:\n\n`/setup-support` - Envía el panel permanente de creación de tickets en el canal actual.');
         } else if (selected === 'social') {
             embed.setTitle('🏆 Niveles, Social & Economía')
-                 .setDescription('Sistema de experiencia, rangos, economía y minijuegos de casino:\n\n`@/rank` - Muestra tu nivel y XP.\n`@/leaderboard` - Tabla de clasificación general.\n`@/set-level-channel` - Canal de avisos de nivel.\n`@/reward-level` - Asigna roles por nivel.\n`@/balance` - Revisa tu dinero en efectivo y banco.\n`@/daily` - Reclama tu dinero diario.\n`@/work` - Trabaja para ganar dinero.\n`@/deposit` - Deposita dinero en el banco.\n`@/withdraw` - Retira dinero del banco.\n`@/dar` - Transfiere dinero a otro usuario.\n`@/economy-add` - Añade o quita dinero (Admin).\n`@/blackjack` - Juega al Blackjack apostando dinero.\n`@/ruleta` - Juega a la ruleta del casino.');
+                 .setDescription('Sistema de experiencia, rangos, economía y minijuegos de casino:\n\n`/rank` - Muestra tu nivel y XP.\n`/leaderboard` - Tabla de clasificación general.\n`/set-level-channel` - Canal de avisos de nivel.\n`/reward-level` - Asigna roles por nivel.\n`/balance` - Revisa tu dinero en efectivo y banco.\n`/daily` - Reclama tu dinero diario.\n`/work` - Trabaja para ganar dinero.\n`/deposit` - Deposita dinero en el banco.\n`/withdraw` - Retira dinero del banco.\n`/dar` - Transfiere dinero a otro usuario.\n`/economy-add` - Añade o quita dinero (Admin).\n`/blackjack` - Juega al Blackjack apostando dinero.\n`/ruleta` - Juega a la ruleta del casino.');
         } else if (selected === 'welcomes') {
             embed.setTitle('👋 Bienvenidas & Despedidas')
-                 .setDescription('Mensajes automáticos personalizados para nuevos miembros:\n\n`@/set-welcome-channel` - Configura el canal de bienvenidas.\n`@/set-bye-channel` - Configura el canal de despedidas.');
+                 .setDescription('Mensajes automáticos personalizados para nuevos miembros:\n\n`/set-welcome-channel` - Configura el canal de bienvenidas.\n`/set-bye-channel` - Configura el canal de despedidas.');
         } else if (selected === 'utils') {
             embed.setTitle('🎁 Sorteos & Utilidades')
-                 .setDescription('Herramientas de utilidad y entretenimiento:\n\n`@/sortear` - Crea un nuevo sorteo.\n`@/re-sortear` - Elige un nuevo ganador.\n`@/serverstats` - Estadísticas en vivo del servidor en canales de voz.\n`@/add-role` - Crea autoroles por reacciones.\n`@/set-bump-channel` - Recordatorios automáticos de Disboard.\n`@/set-log-channel` - Canal de registros de moderación.\n`@/say` - Envía un anuncio como bot.');
+                 .setDescription('Herramientas de utilidad y entretenimiento:\n\n`/sortear` - Crea un nuevo sorteo.\n`/re-sortear` - Elige un nuevo ganador.\n`/serverstats` - Estadísticas en vivo del servidor en canales de voz.\n`/add-role` - Crea autoroles por reacciones.\n`/set-bump-channel` - Recordatorios automáticos de Disboard.\n`/set-log-channel` - Canal de registros de moderación.\n`/say` - Envía un anuncio como bot.');
         }
 
         const selectMenu = new StringSelectMenuBuilder()
